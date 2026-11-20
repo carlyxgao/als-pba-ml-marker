@@ -1,0 +1,41 @@
+name: als-pba-ml-marker
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base=4.5.3
+  # 数据处理与绘图
+  - r-tidyverse
+  - r-readxl
+  - r-ggthemes
+  - r-showtext
+  - r-viridis
+  - r-ggrepel
+  - r-pheatmap
+  - r-ggridges
+  - r-ggplotify
+  - r-ggpubr        # 含 ggsignif
+  - r-patchwork
+  - r-reshape2
+  - r-rcolorbrewer
+  - r-scales
+  # 差异表达与特征筛选（模块一）
+  - bioconductor-edger
+  - bioconductor-limma
+  - r-glmnet
+  - r-randomforest
+  # 富集分析
+  - bioconductor-clusterprofiler
+  - bioconductor-enrichplot
+  - bioconductor-reactomepa
+  - bioconductor-org.hs.eg.db
+  # 机器学习（模块二）
+  - r-caret
+  - r-proc
+  - r-rocr
+  - r-xgboost
+  - r-e1071
+  - r-kernlab
+  - r-fastshap
+  # 共享绘图库 plot_functions.R 的可选懒加载依赖
+  - r-seurat

@@ -1,0 +1,22 @@
+# Data (never commit raw or processed patient data)
+data/
+results/
+*.zip
+*.xlsx
+*.rds
+!data/.gitkeep
+!results/.gitkeep
+
+# R
+*.Rhistory
+*.RData
+*.Rproj
+
+# OS / editor
+.DS_Store
+.DS_Store?
+._*
+.TemporaryItems
+.idea/
+.vscode/
+*.swp
